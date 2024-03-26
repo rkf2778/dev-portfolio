@@ -1,9 +1,15 @@
+// import Highlights from "@/components/Highlights";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+
 export default function Home() {
   return (
     <>
-    <div className="text-2xl flex place-center">
-      THIS IS THE DEV SERVER
-    </div>
+    <About/>
+    {/* <Highlights/> */}
+    <Skills/>
+    <Projects/>
     </>
   );
 }
