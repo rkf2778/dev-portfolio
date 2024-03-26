@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { AvatarImage, Avatar } from "@/components/ui/avatar"
 import { CardTitle, CardContent, Card, CardDescription } from "@/components/ui/card"
 
-export function Test() {
+export function Nav() {
   return (
     (<div className="bg-[#121212] text-white">
       <header
