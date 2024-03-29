@@ -260,7 +260,7 @@ export default async function Projects() {
   }));
 
   return (
-    <section>
+    <section className="min-h-screen bg-[#161513]">
       <div class="py-16">
         <div class="mx-auto px-6 max-w-6xl text-gray-500">
           <div class="text-center">

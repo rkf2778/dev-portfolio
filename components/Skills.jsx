@@ -4,7 +4,7 @@ import ContentfulImage from "./ui/ContentfulImage";
 
 function Skills() {
   return (
-    <section class="min-h-screen bg-red-100">
+    <section class="min-h-screen bg-gray-900">
       <div class="py-16">
         <div class="mx-auto px-6 max-w-6xl text-gray-500">
           <div class="text-center">
