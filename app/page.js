@@ -1,15 +1,13 @@
-// import Highlights from "@/components/Highlights";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
-    <About/>
-    {/* <Highlights/> */}
-    <Skills/>
-    <Projects/>
+      <About />
+      <Skills />
+      <Projects/>
     </>
   );
 }
