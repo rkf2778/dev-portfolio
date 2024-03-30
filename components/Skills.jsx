@@ -791,6 +791,9 @@ function Skills() {
                 <img src={`/techs/react.svg`} width={16} height={16}/>
               </div>
             </div>
+            <div  class="mt-3 flex w-fit mx-auto gap-3">
+              <div className="card-box">Test code</div>
+            </div>
           </div>
         </div>
       </div>

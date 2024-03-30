@@ -35,7 +35,7 @@ import RichText from "@/components/RichText";
 // );
 
 function Works({ post }) {
-  console.log("2nd PSTS:", post);
+  // console.log("2nd PSTS:", post);
   return (
     <>
       {/* ITEM 1 - START */}
@@ -56,7 +56,7 @@ function Works({ post }) {
 
           {/* IMAGE */}
 
-          <div className="mb-2">
+          <div className="mb-2"> 
             <ContentfulImage
               alt={`Cover Image for ${post.image.alt}`}
               src={post.image.src}
@@ -75,8 +75,9 @@ function Works({ post }) {
           </div>
 
           {/* TECHS */}
-          <div class="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-            <svg
+          {/* <div class="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950"> */}
+            <div>
+            {/* <svg
               class="text-[#000014] dark:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -121,7 +122,12 @@ function Works({ post }) {
                 fill="url(#deviconAstro1)"
                 d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"
               ></path>
-            </svg>
+            </svg> */}
+            <div className="flex gap-2">
+              {post.techs.map(tech => 
+              <p className="bg-gradient-to-tr from-slate-400 to-slate-50 shadow shadow-white px-2 flex items-center rounded-lg mb-5 text-gray-900 font-medium ">{tech}</p>  
+            )}
+            </div>
           </div>
 
           {/* DOWNLOAD BUTTON */}
@@ -243,6 +249,10 @@ function Works({ post }) {
 
 export default async function Projects() {
   const data = await client.getEntries({ content_type: "productPage" });
+  const tester = await data?.items.map((item) => (
+    item
+  ))   
+  console.log("TESTER:",tester[0].fields);
   const posts = await data?.items.map((item) => ({
     id: item?.sys?.id,
     title: item?.fields?.title,
