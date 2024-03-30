@@ -124,8 +124,8 @@ function Works({ post }) {
               ></path>
             </svg> */}
             <div className="flex gap-2">
-              {post.techs.map(tech => 
-              <p className="bg-gradient-to-tr from-slate-400 to-slate-50 shadow shadow-white px-2 flex items-center rounded-lg mb-5 text-gray-900 font-medium ">{tech}</p>  
+              {post.techs.map((tech,i) => 
+              <p key={i} className="bg-gradient-to-tr from-slate-400 to-slate-50 shadow shadow-white px-2 flex items-center rounded-lg mb-5 text-gray-900 font-medium ">{tech}</p>  
             )}
             </div>
           </div>
@@ -252,7 +252,7 @@ export default async function Projects() {
   const tester = await data?.items.map((item) => (
     item
   ))   
-  console.log("TESTER:",tester[0].fields);
+  // console.log("TESTER:",tester[0].fields);
   const posts = await data?.items.map((item) => ({
     id: item?.sys?.id,
     title: item?.fields?.title,
