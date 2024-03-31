@@ -2,6 +2,7 @@
 import { useState } from "react"
 import ContentfulImage from "./ui/ContentfulImage"
 import IconImage from "./ui/IconImage"
+import { motion } from "framer-motion"
 
 const LinkButton = ({ link, linkName, imageSrc }) => {
   return (
@@ -28,12 +29,12 @@ export default function Work({ post }) {
   return (
     <>
       {/* ITEM 1 - START */}
-      <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-8 dark:border-gray-800 dark:bg-gray-900">
+      <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 max-w-96">
         {/* BG ANIMATION */}
         <div aria-hidden="true" className="card-box-hover"></div>
 
         {/* CARD CONTAINER */}
-        <div className="relative flex min-h-72 flex-col place-items-center justify-items-center p-8">
+        <div className="p-9 relative flex min-h-72 flex-col place-items-center justify-items-center">
           {/* TITLE */}
           <div className="mt-6 rounded-b-[--card-border-radius] pb-6">
             <p className="text-2xl font-bold text-gray-700 dark:text-gray-300">
@@ -54,7 +55,7 @@ export default function Work({ post }) {
           </div>
 
           {/* DESCRIPTION */}
-          <div className="mt-6 rounded-b-[--card-border-radius] pb-6">
+          <div className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify ">
             <p className="text-gray-700 dark:text-gray-300">
               {isExpanded
                 ? post.description
@@ -155,7 +156,7 @@ export default function Work({ post }) {
             {post?.kaggleUrl && (
               <a
                 href={post?.kaggleUrl}
-                className="group w-[90px] flex size-9 w-15 items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
+                className="w-15 group flex size-9 w-[90px] items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
               >
                 <span className="sr-only">Kaggle</span>
 

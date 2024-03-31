@@ -9,7 +9,7 @@ function Skills() {
       {/* CONTAINER */}
       <div className="mx-auto max-w-7xl p-16">
         {/* HEADING CONTAINER */}
-        <div className="mx-auto px-6 text-gray-500">
+        <div className="">
           <div className="mb-7 text-center">
             <h2 className="text-5xl font-semibold leading-normal text-gray-950 dark:text-white">
               TECH STACK
@@ -20,9 +20,9 @@ function Skills() {
           </div>
 
           {/* ICONS CONTAINER */}
-          <div className="max-w-screen overflow-x-auto  px-10">
+          <div className="max-w-[600px]  overflow-x-auto mx-auto px-10">
             {/* ICONS SECTION */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-6">
               {images.map((image, index) => (
                 <div className="card-box flex-center" key={index}>
                   <IconImage
