@@ -2,7 +2,7 @@
 import { useState } from "react"
 import ContentfulImage from "./ui/ContentfulImage"
 import IconImage from "./ui/IconImage"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 const LinkButton = ({ link, linkName, imageSrc }) => {
   return (
@@ -29,12 +29,16 @@ export default function Work({ post }) {
   return (
     <>
       {/* ITEM 1 - START */}
-      <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 max-w-96">
+      <motion.div
+        transition={{ layout: { duration: 1, type: "spring" } }}
+        layout
+        className="group relative max-w-96 overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
+      >
         {/* BG ANIMATION */}
         <div aria-hidden="true" className="card-box-hover"></div>
 
         {/* CARD CONTAINER */}
-        <div className="p-9 relative flex min-h-72 flex-col place-items-center justify-items-center">
+        <div className="relative flex min-h-72 flex-col place-items-center justify-items-center p-9">
           {/* TITLE */}
           <div className="mt-6 rounded-b-[--card-border-radius] pb-6">
             <p className="text-2xl font-bold text-gray-700 dark:text-gray-300">
@@ -55,25 +59,30 @@ export default function Work({ post }) {
           </div>
 
           {/* DESCRIPTION */}
-          <motion.div transition={{layout:{duration:1,type:"spring"}}} layout className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify ">
-            <motion.p layout className="text-gray-700 dark:text-gray-300">
-              {isExpanded
-                ? post.description
-                : post.description.slice(0, stringLength)}
-              {post.description.length > stringLength && (
-                <>
-                  <br />
-                  <button
-                    onClick={toggleDescription}
-                    class="mt-1 font-bold text-white underline underline-offset-[6px] hover:text-yellow-500"
-                  >
-                    {isExpanded ? "Show Less" : "Show More"}
-                  </button>
-                </>
-              )}
-            </motion.p>
-          </motion.div>
-
+          <AnimatePresence>
+            <motion.div
+              transition={{ layout: { duration: 1, type: "spring" } }}
+              layout
+              className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify "
+            >
+              <motion.p layout className="text-gray-700 dark:text-gray-300">
+                {isExpanded
+                  ? post.description
+                  : post.description.slice(0, stringLength)}
+                {post.description.length > stringLength && (
+                  <>
+                    <br />
+                    <button
+                      onClick={toggleDescription}
+                      class="mt-1 font-bold text-white underline underline-offset-[6px] hover:text-yellow-500"
+                    >
+                      {isExpanded ? "Show Less" : "Show More"}
+                    </button>
+                  </>
+                )}
+              </motion.p>
+            </motion.div>
+          </AnimatePresence>
           {/* TECHS */}
           <div className="mb-5 w-full">
             <div className="flex flex-wrap items-center justify-start gap-2">
@@ -187,7 +196,7 @@ export default function Work({ post }) {
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* ITEM 1 - END */}
     </>
   )
