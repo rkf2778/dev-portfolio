@@ -1,26 +1,26 @@
-import Image from "next/image";
-import React from "react";
-import ContentfulImage from "./ui/ContentfulImage";
+import Image from "next/image"
+import React from "react"
+import ContentfulImage from "./ui/ContentfulImage"
 
 function Skills() {
   return (
-    <section class="min-h-screen bg-gray-900">
-      <div class="py-16">
-        <div class="mx-auto px-6 max-w-6xl text-gray-500">
-          <div class="text-center">
-            <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">
+    <section className="min-h-screen bg-gray-900">
+      <div className="py-16">
+        <div className="mx-auto max-w-6xl px-6 text-gray-500">
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold text-gray-950 dark:text-white">
               TECH
-              <br class="hidden sm:block" /> STACKS
+              <br className="hidden sm:block" /> STACKS
             </h2>
-            <p class="mt-6 text-gray-700 dark:text-gray-300">
+            <p className="mt-6 text-gray-700 dark:text-gray-300">
               Jack of all trades, master of none
             </p>
           </div>
-          <div class="mt-12 relative w-fit h-fit sm:mx-auto sm:px-0 -mx-6 px-6 overflow-x-auto">
-            <div class="mb-3 flex w-fit mx-auto gap-3 text-gray-950 dark:text-white">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+          <div className="relative -mx-6 mt-12 h-fit w-fit overflow-x-auto px-6 sm:mx-auto sm:px-0">
+            <div className="mx-auto mb-3 flex w-fit gap-3 text-gray-950 dark:text-white">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
-                  class="text-[#000014] dark:text-white"
+                  className="text-[#000014] dark:text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
                   height="1em"
@@ -36,8 +36,8 @@ function Skills() {
                       gradientTransform="scale(.1)"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0" stop-color="currentColor"></stop>
-                      <stop offset="1" stop-color="currentColor"></stop>
+                      <stop offset="0" stopColor="currentColor"></stop>
+                      <stop offset="1" stopColor="currentColor"></stop>
                     </linearGradient>
                     <linearGradient
                       id="deviconAstro1"
@@ -48,11 +48,11 @@ function Skills() {
                       gradientTransform="scale(.1)"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0" stop-color="#ff1639"></stop>
+                      <stop offset="0" stopColor="#ff1639"></stop>
                       <stop
                         offset="1"
-                        stop-color="#ff1639"
-                        stop-opacity="0"
+                        stopColor="#ff1639"
+                        stopOpacity="0"
                       ></stop>
                     </linearGradient>
                   </defs>
@@ -70,7 +70,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.84em"
@@ -87,7 +87,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.53em"
@@ -101,8 +101,8 @@ function Skills() {
                 </svg>
               </div>
             </div>
-            <div class="flex w-fit mx-auto gap-3">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+            <div className="mx-auto flex w-fit gap-3">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -115,7 +115,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -123,18 +123,18 @@ function Skills() {
                   viewBox="0 0 128 128"
                 >
                   <path
-                    class="text-[#014847] dark:text-white"
+                    className="text-[#014847] dark:text-white"
                     fill="currentColor"
                     d="M80.46 82.605h-8.777l-.734-.733V61.326c0-3.656-1.436-6.489-5.844-6.588c-2.269-.06-4.864 0-7.638.11l-.416.425v26.589l-.733.733H47.54l-.733-.733V46.764l.733-.733h19.753c7.677 0 13.899 6.22 13.899 13.898v21.943z"
                   ></path>
                   <path
-                    class="text-[#05bdba]"
+                    className="text-[#05bdba]"
                     fill="currentColor"
                     d="M58.942 119.902v-26.33l.733-.734h8.797l.733.733v26.331l-.733.733h-8.796zm0-84.838V8.734L59.675 8h8.797l.733.733v26.331l-.733.733h-8.796zm68.335 34.385H92.169l-.733-.733V59.92l.733-.733h35.108l.733.733v8.797zm-91.436 0H.733L0 68.716V59.92l.733-.733h35.108l.733.733v8.797zm-8.49-35.633v-1.209l6.034-6.033h1.208l9.223 9.223v6.39l-.852.852h-6.39zm7.242 68.235h-1.208l-6.033-6.033v-1.209l9.223-9.222h6.39l.851.851v6.39z"
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.98em"
@@ -149,8 +149,8 @@ function Skills() {
                       y1="20.687%"
                       y2="44.071%"
                     >
-                      <stop offset="0%" stop-color="#249361"></stop>
-                      <stop offset="100%" stop-color="#3ecf8e"></stop>
+                      <stop offset="0%" stopColor="#249361"></stop>
+                      <stop offset="100%" stopColor="#3ecf8e"></stop>
                     </linearGradient>
                     <linearGradient
                       id="logosSupabaseIcon1"
@@ -160,7 +160,7 @@ function Skills() {
                       y2="34.708%"
                     >
                       <stop offset="0%"></stop>
-                      <stop offset="100%" stop-opacity="0"></stop>
+                      <stop offset="100%" stopOpacity="0"></stop>
                     </linearGradient>
                   </defs>
                   <path
@@ -169,7 +169,7 @@ function Skills() {
                   ></path>
                   <path
                     fill="url(#logosSupabaseIcon1)"
-                    fill-opacity="0.2"
+                    fillOpacity="0.2"
                     d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"
                   ></path>
                   <path
@@ -178,7 +178,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.75em"
@@ -192,8 +192,8 @@ function Skills() {
                 </svg>
               </div>
             </div>
-            <div class="my-3 flex w-fit mx-auto gap-3">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+            <div className="mx-auto my-3 flex w-fit gap-3">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.73em"
@@ -278,7 +278,7 @@ function Skills() {
                   ></path>
                   <use
                     fill="#ffa712"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     href="#logosFirebase2"
                   ></use>
                   <use
@@ -291,7 +291,7 @@ function Skills() {
                   ></path>
                   <use
                     fill="#ffa50e"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     href="#logosFirebase3"
                   ></use>
                   <use
@@ -316,7 +316,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.88em"
@@ -337,7 +337,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -350,7 +350,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -363,7 +363,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.81em"
@@ -379,7 +379,7 @@ function Skills() {
                       y2="52.919%"
                     >
                       <stop offset="0%"></stop>
-                      <stop offset="100%" stop-opacity="0"></stop>
+                      <stop offset="100%" stopOpacity="0"></stop>
                     </linearGradient>
                   </defs>
                   <path
@@ -396,14 +396,14 @@ function Skills() {
                   ></path>
                   <path
                     fill="url(#logosFlutter0)"
-                    fill-opacity="0.8"
+                    fillOpacity="0.8"
                     d="m121.133 279.531l40.56-13.459l4.029-31.131z"
                   ></path>
                 </svg>
               </div>
             </div>
-            <div class="flex w-fit mx-auto gap-3">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+            <div className="mx-auto flex w-fit gap-3">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.95em"
@@ -418,12 +418,12 @@ function Skills() {
                       y1="90.929%"
                       y2="55.184%"
                     >
-                      <stop offset="0%" stop-color="#e40035"></stop>
-                      <stop offset="24%" stop-color="#f60a48"></stop>
-                      <stop offset="35.2%" stop-color="#f20755"></stop>
-                      <stop offset="49.4%" stop-color="#dc087d"></stop>
-                      <stop offset="74.5%" stop-color="#9717e7"></stop>
-                      <stop offset="100%" stop-color="#6c00f5"></stop>
+                      <stop offset="0%" stopColor="#e40035"></stop>
+                      <stop offset="24%" stopColor="#f60a48"></stop>
+                      <stop offset="35.2%" stopColor="#f20755"></stop>
+                      <stop offset="49.4%" stopColor="#dc087d"></stop>
+                      <stop offset="74.5%" stopColor="#9717e7"></stop>
+                      <stop offset="100%" stopColor="#6c00f5"></stop>
                     </linearGradient>
                     <linearGradient
                       id="logosAngularIcon1"
@@ -432,11 +432,11 @@ function Skills() {
                       y1="12.058%"
                       y2="68.21%"
                     >
-                      <stop offset="0%" stop-color="#ff31d9"></stop>
+                      <stop offset="0%" stopColor="#ff31d9"></stop>
                       <stop
                         offset="100%"
-                        stop-color="#ff5be1"
-                        stop-opacity="0"
+                        stopColor="#ff5be1"
+                        stopOpacity="0"
                       ></stop>
                     </linearGradient>
                   </defs>
@@ -450,7 +450,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.12em"
@@ -483,7 +483,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.56em"
@@ -508,7 +508,7 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/5 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/5 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.13em"
@@ -522,8 +522,8 @@ function Skills() {
                 </svg>
               </div>
             </div>
-            <div class="mt-3 flex w-fit mx-auto gap-3">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+            <div className="mx-auto mt-3 flex w-fit gap-3">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -626,7 +626,7 @@ function Skills() {
                   </g>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -643,9 +643,9 @@ function Skills() {
                       gradientTransform="translate(15.534 -96.774)scale(.1939)"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset=".003" stop-color="#e44857"></stop>
-                      <stop offset=".469" stop-color="#c711e1"></stop>
-                      <stop offset="1" stop-color="#7f52ff"></stop>
+                      <stop offset=".003" stopColor="#e44857"></stop>
+                      <stop offset=".469" stopColor="#c711e1"></stop>
+                      <stop offset="1" stopColor="#7f52ff"></stop>
                     </linearGradient>
                   </defs>
                   <path
@@ -655,8 +655,8 @@ function Skills() {
                 </svg>
               </div>
             </div>
-            <div class="mt-3 flex w-fit mx-auto gap-3">
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+            <div className="mx-auto mt-3 flex w-fit gap-3">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -759,7 +759,7 @@ function Skills() {
                   </g>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -776,9 +776,9 @@ function Skills() {
                       gradientTransform="translate(15.534 -96.774)scale(.1939)"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset=".003" stop-color="#e44857"></stop>
-                      <stop offset=".469" stop-color="#c711e1"></stop>
-                      <stop offset="1" stop-color="#7f52ff"></stop>
+                      <stop offset=".003" stopColor="#e44857"></stop>
+                      <stop offset=".469" stopColor="#c711e1"></stop>
+                      <stop offset="1" stopColor="#7f52ff"></stop>
                     </linearGradient>
                   </defs>
                   <path
@@ -787,18 +787,18 @@ function Skills() {
                   ></path>
                 </svg>
               </div>
-              <div class="border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                <img src={`/techs/react.svg`} width={16} height={16}/>
+              <div className="relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950">
+                <img src="public\techs\react.svg" width={16} height={16} />
               </div>
             </div>
-            <div  class="mt-3 flex w-fit mx-auto gap-3">
+            <div className="mx-auto mt-3 flex w-fit gap-3">
               <div className="card-box">Test code</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

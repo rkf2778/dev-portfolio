@@ -1,6 +1,6 @@
-import ContentfulImage from "@/components/ui/ContentfulImage";
-import { client } from "@/lib/contentful/client";
-import RichText from "@/components/RichText";
+import ContentfulImage from "@/components/ui/ContentfulImage"
+import { client } from "@/lib/contentful/client"
+import RichText from "@/components/RichText"
 
 // const ProjectItem = ({ post }) => (
 //   <li>
@@ -39,24 +39,24 @@ function Works({ post }) {
   return (
     <>
       {/* ITEM 1 - START */}
-      <div class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+      <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-8 dark:border-gray-800 dark:bg-gray-900">
         {/* BG ANIMATION */}
         <div
           aria-hidden="true"
-          class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-blue-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"
+          className="absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b from-blue-500 to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"
         ></div>
 
-        <div class="relative">
+        <div className="relative">
           {/* TITLE */}
-          <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-            <p class="text-2xl font-bold text-gray-700 dark:text-gray-300">
+          <div className="mt-6 rounded-b-[--card-border-radius] pb-6">
+            <p className="text-2xl font-bold text-gray-700 dark:text-gray-300">
               {post.title}
             </p>
           </div>
 
           {/* IMAGE */}
 
-          <div className="mb-2"> 
+          <div className="mb-2">
             <ContentfulImage
               alt={`Cover Image for ${post.image.alt}`}
               src={post.image.src}
@@ -68,93 +68,36 @@ function Works({ post }) {
           </div>
 
           {/* DESCRIPTION */}
-          <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-            <p class="text-gray-700 dark:text-gray-300">
+          <div className="mt-6 rounded-b-[--card-border-radius] pb-6">
+            <p className="text-gray-700 dark:text-gray-300">
               <RichText content={post.description} />
             </p>
           </div>
 
           {/* TECHS */}
-          {/* <div class="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950"> */}
-            <div>
-            {/* <svg
-              class="text-[#000014] dark:text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 128 128"
-            >
-              <defs>
-                <linearGradient
-                  id="deviconAstro0"
-                  x1="882.997"
-                  x2="638.955"
-                  y1="27.113"
-                  y2="866.902"
-                  gradientTransform="scale(.1)"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="currentColor"></stop>
-                  <stop offset="1" stop-color="currentColor"></stop>
-                </linearGradient>
-                <linearGradient
-                  id="deviconAstro1"
-                  x1="1001.68"
-                  x2="790.326"
-                  y1="652.45"
-                  y2="1094.91"
-                  gradientTransform="scale(.1)"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#ff1639"></stop>
-                  <stop offset="1" stop-color="#ff1639" stop-opacity="0"></stop>
-                </linearGradient>
-              </defs>
-              <path
-                fill="url(#deviconAstro0)"
-                d="M81.504 9.465c.973 1.207 1.469 2.836 2.457 6.09l21.656 71.136a90.079 90.079 0 0 0-25.89-8.765L65.629 30.28a1.833 1.833 0 0 0-3.52.004L48.18 77.902a90.104 90.104 0 0 0-26.003 8.778l21.758-71.14c.996-3.25 1.492-4.876 2.464-6.083a8.023 8.023 0 0 1 3.243-2.398c1.433-.575 3.136-.575 6.535-.575H71.72c3.402 0 5.105 0 6.543.579a7.988 7.988 0 0 1 3.242 2.402Zm0 0"
-              ></path>
-              <path
-                fill="#ff5d01"
-                d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"
-              ></path>
-              <path
-                fill="url(#deviconAstro1)"
-                d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"
-              ></path>
-            </svg> */}
+          <div>
             <div className="flex gap-2">
-              {post.techs.map((tech,i) => 
-              <p key={i} className="bg-gradient-to-tr from-slate-400 to-slate-50 shadow shadow-white px-2 flex items-center rounded-lg mb-5 text-gray-900 font-medium ">{tech}</p>  
-            )}
+              {post.techs.map((tech, i) => (
+                <p
+                  key={i}
+                  className="mb-5 flex items-center rounded-lg bg-gradient-to-tr from-slate-400 to-slate-50 px-2 font-medium text-gray-900 shadow shadow-white"
+                >
+                  {tech}
+                </p>
+              ))}
             </div>
           </div>
 
           {/* DOWNLOAD BUTTON */}
 
-          <div class="flex gap-3 -mb-8 py-4 border-t border-gray-200 dark:border-gray-800">
+          <div className="-mb-8 flex gap-3 border-t border-gray-200 py-4 dark:border-gray-800">
+            {/* DEMO button */}
             <a
               href={post.liveURL}
               //   download="/"
-              class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center"
+              className="group flex h-8 items-center justify-center gap-1.5 rounded-xl bg-gray-100 px-3.5 text-sm text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
             >
               <span>View Demo</span>
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m17 13l-5 5m0 0l-5-5m5 5V6"
-                ></path>
-              </svg> */}
-
               <svg
                 viewBox="0 0 24 24"
                 width="1em"
@@ -162,11 +105,11 @@ function Works({ post }) {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -175,9 +118,9 @@ function Works({ post }) {
                     <path
                       id="Vector"
                       d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                       stroke="currentColor"
                     ></path>{" "}
@@ -189,11 +132,11 @@ function Works({ post }) {
             {/* GITHUB BUTTON */}
             <a
               href={post.githubUrl}
-              class="group flex items-center rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center"
+              className="group flex size-8 items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
             >
-              <span class="sr-only">Source Code</span>
+              <span className="sr-only">Source Code</span>
               <svg
-                class="size-5"
+                className="size-5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
                 height="1em"
@@ -209,11 +152,11 @@ function Works({ post }) {
             {/* KAGGLE */}
             <a
               href={post?.kaggleUrl}
-              className={`group flex items-center rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center w-1/5 p-1 ${
+              className={`group flex size-8 w-1/5 items-center justify-center rounded-xl bg-gray-100 p-1 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative ${
                 post.kaggleUrl ? "" : "pointer-events-none cursor-not-allowed"
               }`}
             >
-              <span class="sr-only">Kaggle</span>
+              <span className="sr-only">Kaggle</span>
 
               <svg
                 fill="#ffffff"
@@ -221,16 +164,16 @@ function Works({ post }) {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff"
-                stroke-width="0.00032"
+                strokeWidth="0.00032"
                 transform="rotate(0)"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   stroke="#CCCCCC"
-                  stroke-width="0.064"
+                  strokeWidth="0.064"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -244,14 +187,11 @@ function Works({ post }) {
       </div>
       {/* ITEM 1 - END */}
     </>
-  );
+  )
 }
 
-export default async function Projects() {
-  const data = await client.getEntries({ content_type: "productPage" });
-  const tester = await data?.items.map((item) => (
-    item
-  ))   
+export default async function Projects({ poster }) {
+  const data = await client.getEntries({ content_type: "productPage" })
   // console.log("TESTER:",tester[0].fields);
   const posts = await data?.items.map((item) => ({
     id: item?.sys?.id,
@@ -267,21 +207,21 @@ export default async function Projects() {
     liveURL: item?.fields?.liveDemoUrl,
     githubUrl: item?.fields?.githubRepoUrl,
     kaggleUrl: item?.fields?.kaggleUrl,
-  }));
+  }))
 
   return (
     <section className="min-h-screen bg-[#161513]">
-      <div class="py-16">
-        <div class="mx-auto px-6 max-w-6xl text-gray-500">
-          <div class="text-center">
-            <h2 class="text-5xl text-gray-950 dark:text-white font-semibold">
+      <div className="py-16">
+        <div className="mx-auto max-w-6xl px-6 text-gray-500">
+          <div className="text-center">
+            <h2 className="text-5xl font-semibold text-gray-950 dark:text-white">
               Some of my works
             </h2>
-            <p class="mt-1 text-gray-700 dark:text-gray-300 text-xs">
-              Powered by Contentful
+            <p className="mt-1 text-xs text-gray-700 dark:text-gray-300">
+              ©️ Powered by Contentful
             </p>
           </div>
-          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <Works key={post.id} post={post} />
             ))}
@@ -289,5 +229,5 @@ export default async function Projects() {
         </div>
       </div>
     </section>
-  );
+  )
 }
