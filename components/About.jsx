@@ -1,4 +1,5 @@
 import React from "react"
+import ContentfulImage from "./ui/ContentfulImage"
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
         {/* IMAGE ICON */}
         <section className="flex place-content-center mb-5 md:mb-10">
           <div className="h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
-            <img src="https://i.imgur.com/4U5tBXC.png" alt="" />
+            <ContentfulImage src="//i.imgur.com/4U5tBXC.png" alt="" height={213} width={213} />
           </div>
         </section>
         {/* HEADING */}

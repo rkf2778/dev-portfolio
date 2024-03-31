@@ -24,7 +24,7 @@ function Skills() {
             {/* ICONS SECTION */}
             <div className="flex flex-wrap gap-2 p-3">
               {images.map((image, index) => (
-                <div className="card-box flex-center">
+                <div className="card-box flex-center" key={index}>
                   <IconImage
                     src={image}
                     height={16}
