@@ -21,7 +21,7 @@ export default async function Projects() {
   }))
 
   return (
-    <section className="min-h-screen bg-[#161513]">
+    <section className="bg-[#161513]">
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6 text-gray-500">
           <div className="text-center">
