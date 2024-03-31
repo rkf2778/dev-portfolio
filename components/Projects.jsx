@@ -190,7 +190,7 @@ function Works({ post }) {
   )
 }
 
-export default async function Projects({ poster }) {
+export default async function Projects() {
   const data = await client.getEntries({ content_type: "productPage" })
   // console.log("TESTER:",tester[0].fields);
   const posts = await data?.items.map((item) => ({
@@ -217,7 +217,7 @@ export default async function Projects({ poster }) {
             <h2 className="text-5xl font-semibold text-gray-950 dark:text-white">
               Some of my works
             </h2>
-            <p className="mt-1 text-xs text-gray-700 dark:text-gray-300">
+            <p className="mt-2 text-xs text-gray-700 dark:text-gray-300">
               ©️ Powered by Contentful
             </p>
           </div>
