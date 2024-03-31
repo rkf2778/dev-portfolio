@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
-import RichText from "./RichText"
 import ContentfulImage from "./ui/ContentfulImage"
+import IconImage from "./ui/IconImage"
 
 const LinkButton = ({ link, linkName, imageSrc }) => {
   return (

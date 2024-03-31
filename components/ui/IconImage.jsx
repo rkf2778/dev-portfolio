@@ -9,6 +9,7 @@ export default function IconImage(props) {
   return (
     <Image
       loader={imageLoader}
+      alt="Icon"
       {...props}
     />
   )
