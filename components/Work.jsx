@@ -55,8 +55,8 @@ export default function Work({ post }) {
           </div>
 
           {/* DESCRIPTION */}
-          <div className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify ">
-            <p className="text-gray-700 dark:text-gray-300">
+          <motion.div transition={{layout:{duration:1,type:"spring"}}} layout className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify ">
+            <motion.p layout className="text-gray-700 dark:text-gray-300">
               {isExpanded
                 ? post.description
                 : post.description.slice(0, stringLength)}
@@ -71,8 +71,8 @@ export default function Work({ post }) {
                   </button>
                 </>
               )}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
           {/* TECHS */}
           <div className="mb-5 w-full">
