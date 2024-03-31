@@ -32,7 +32,7 @@ export default async function Projects() {
               ©️ Powered by Contentful
             </p>
           </div>
-          <div className="mx-auto mt-12 grid w-full justify-items-center gap-6 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-stretch">
+          <div className="mx-auto mt-12 grid w-full justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3 justify-stretch">
             {posts.map((post) => (
               <Work key={post.id} post={post} />
             ))}
