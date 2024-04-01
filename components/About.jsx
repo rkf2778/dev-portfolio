@@ -39,7 +39,7 @@ function About() {
         </section>
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
-          <a href="#" className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800">
+          <a href="#contacts" className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800">
             Get In Touch
           </a>
           <a

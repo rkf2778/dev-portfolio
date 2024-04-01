@@ -27,7 +27,6 @@ function ContactMe() {
             {social.platform == "Email" && (
               <>
                 <MdOutlineEmail className="size-14" />
-                <span>{social.platform}</span>
               </>
             )}
           </a>
