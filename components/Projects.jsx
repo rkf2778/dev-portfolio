@@ -3,7 +3,7 @@ import Work from "./Work"
 
 export default async function Projects() {
   const data = await client.getEntries({ content_type: "productPage" })
-  // console.log("TESTER:",tester[0].fields);
+  // console.log("TESTER:",data.items);
   const posts = await data?.items.map((item) => ({
     id: item?.sys?.id,
     title: item?.fields?.title,
