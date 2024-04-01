@@ -11,28 +11,36 @@ const socials = [
 
 function ContactMe() {
   return (
-    <div id="contacts" className="flex-center gap-16 bg-gray-900 p-10">
-      {socials.map((social, index) => (
-        <div
-          key={index}
-          id="contact"
-          className=" hover:underline hover:underline-offset-4"
-        >
-          <a href={social.link} className="flex-wrap flex-center gap-3">
-            {social.platform == "Github" && <FaGithub className="size-10" />}
-            {social.platform == "LinkedIn" && (
-              <FaLinkedin className="size-10" />
-            )}
-            {social.platform == "Kaggle" && <FaKaggle className="size-9" />}
-            {social.platform == "Email" && (
-              <>
-                <MdOutlineEmail className="size-14" />
-              </>
-            )}
-          </a>
-        </div>
-      ))}
-    </div>
+    <>
+      <div
+        id="contacts"
+        className="flex-center relative gap-16 bg-gray-900 p-10"
+      >
+        {socials.map((social, index) => (
+          <div
+            key={index}
+            id="contact"
+            className=" hover:underline hover:underline-offset-4"
+          >
+            <a href={social.link} className="flex-center flex-wrap gap-3">
+              {social.platform == "Github" && <FaGithub className="size-10" />}
+              {social.platform == "LinkedIn" && (
+                <FaLinkedin className="size-10" />
+              )}
+              {social.platform == "Kaggle" && <FaKaggle className="size-9" />}
+              {social.platform == "Email" && (
+                <>
+                  <MdOutlineEmail className="size-14" />
+                </>
+              )}
+            </a>
+          </div>
+        ))}
+      </div>
+      <div className="flex-center bg-gray-900 pb-14 text-2xl">
+        ©️ Made with love
+      </div>
+    </>
   )
 }
 
