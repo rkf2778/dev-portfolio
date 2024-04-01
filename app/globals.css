@@ -26,17 +26,37 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer components{
-  .card-box{
-    @apply border flex relative *:relative *:size-7 *:m-auto size-20 mx-auto rounded-xl dark:bg-gray-900 dark:border-white/15 before:rounded-[11px] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950
+@layer components {
+  .card-box {
+    @apply relative mx-auto flex size-20 rounded-xl border *:relative *:m-auto *:size-7 before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent dark:before:shadow-gray-950;
   }
 
-  .card-box-hover{
-    @apply absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b from-blue-500 to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10
+  .card-box-hover {
+    @apply absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b from-blue-500 to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10;
   }
 
-  .flex-center{
-    @apply flex items-center justify-center
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+
+  /* Apply the pulsating animation to the dot */
+  .dot {
+    animation: pulse 2s infinite;
   }
 }
 
@@ -68,7 +88,7 @@ body {
   }
 
   .container {
-    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
   }
 
   .title {
