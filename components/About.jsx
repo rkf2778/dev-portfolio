@@ -39,13 +39,13 @@ function About() {
         </section>
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
-          <a href="#contacts" className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800">
+          <a href="#contacts" className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800 hover:bg-black hover:text-white hover:border-white border-2">
             Get In Touch
           </a>
           <a
             href="/resume/resume.pdf"
             download
-            className="flex-center mt-3 rounded-full border-2 bg-transparent px-[30px] py-[16px] text-lg font-semibold text-white md:mt-0"
+            className="flex-center mt-3 rounded-full border-2 bg-transparent px-[30px] py-[16px] text-lg font-semibold text-white md:mt-0 hover:bg-gradient-to-tr from-[#FF8660] to-[#8000FF] hover:border-white'"
           >
             Download CV
           </a>
