@@ -23,7 +23,7 @@ export default async function Projects() {
   return (
     <section className="bg-[#161513]">
       <div className="py-16">
-        <div className="mx-auto max-w-6xl px-6 text-gray-500">
+        <div className="mx-auto px-6 text-gray-500">
           <div className="text-center">
             <h2 className="text-5xl font-semibold text-gray-950 dark:text-white">
               Some of my works
@@ -32,7 +32,7 @@ export default async function Projects() {
               ©️ Powered by Contentful
             </p>
           </div>
-          <div className="mx-auto mt-12 grid w-full justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3 justify-stretch">
+          <div className="mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 max-w-[1140px] justify-items-center gap-6 justify-stretch">
             {posts.map((post) => (
               <Work key={post.id} post={post} />
             ))}
