@@ -1,5 +1,6 @@
 import React from "react"
 import ContentfulImage from "./ui/ContentfulImage"
+import { Link } from 'react-scroll';
 
 function About() {
   return (
@@ -39,9 +40,9 @@ function About() {
         </section>
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
-          <a href="#contacts" className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800 hover:bg-black hover:text-white hover:border-white border-2">
+          <Link to="contacts" smooth={true} duration={500} offset={-50} className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800 hover:bg-black hover:text-white hover:border-white border-2">
             Get In Touch
-          </a>
+          </Link>
           <a
             href="/resume/resume.pdf"
             download
