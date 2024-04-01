@@ -18,7 +18,7 @@ function ContactMe() {
           id="contact"
           className=" hover:underline hover:underline-offset-4"
         >
-          <a href={social.link} className="flex-center gap-3">
+          <a href={social.link} className="flex-wrap flex-center gap-3">
             {social.platform == "Github" && <FaGithub className="size-10" />}
             {social.platform == "LinkedIn" && (
               <FaLinkedin className="size-10" />
