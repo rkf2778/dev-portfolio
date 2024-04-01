@@ -21,7 +21,7 @@ export default async function Projects() {
   }))
 
   return (
-    <section className="bg-[#161513]">
+    <section className="p-2 bg-[#161513]">
       <div className="py-16">
         <div className="mx-auto px-6 text-gray-500">
           <div className="text-center">
@@ -32,7 +32,7 @@ export default async function Projects() {
               ©️ Powered by Contentful
             </p>
           </div>
-          <div className="mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 max-w-[1140px] justify-items-center gap-6 justify-stretch">
+          <div className="mx-auto mt-12 card-container gap-4 min-w-[250px]">
             {posts.map((post) => (
               <Work key={post.id} post={post} />
             ))}

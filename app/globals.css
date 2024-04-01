@@ -38,6 +38,23 @@ body {
   .flex-center{
     @apply flex items-center justify-center
   }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust min and max width as needed */
+    grid-auto-rows: auto auto auto auto;
+    gap: 20px;
+  }
+  
+  .card {
+    display: grid;
+    grid-row: span 4;
+    grid-template-rows: subgrid; /* Adjust rows as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
 @layer utilities {
