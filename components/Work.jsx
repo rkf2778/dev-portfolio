@@ -2,9 +2,9 @@
 import { useState } from "react"
 import ContentfulImage from "./ui/ContentfulImage"
 import IconImage from "./ui/IconImage"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
-const LinkButton = ({ link, linkName, imageSrc }) => {
+const LinkButton = ({ link, imageSrc }) => {
   return (
     <>
       <a

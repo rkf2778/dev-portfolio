@@ -10,10 +10,12 @@ function Skills() {
         <div className="">
           <div className="mb-7 text-center">
             <h2 className="text-5xl font-semibold leading-normal text-gray-950 dark:text-white">
-              SOME OF THE THINGS I KNOW
+              What i've played around with 😉
             </h2>
             <p className="mt-1 text-gray-700 dark:text-gray-300">
-              Jack of all trades, master of none
+              <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text text-transparent">
+                Jack of all trades, master of none
+              </span>
             </p>
           </div>
 
@@ -22,17 +24,21 @@ function Skills() {
             {/* ICONS SECTION */}
             <div className="flex flex-wrap gap-6">
               {images.map((image, index) => (
-                
-                <div className="flex flex-col p-3 card-box md:size-32" key={index}> 
-                  
-                  <IconImage className="flex-center gap-3"
+                <div
+                  className="card-box flex flex-col p-3 md:size-32"
+                  key={index}
+                >
+                  <IconImage
+                    className="flex-center gap-3"
                     src={image}
                     height={16}
                     width={16}
                     alt={image.split("/")[1].split(".")[0]}
                   />
-                  
-                  <div className="text-sm flex-center whitespace-nowrap">{image.split("/")[1].split(".")[0]}</div>
+
+                  <div className="flex-center whitespace-nowrap text-sm">
+                    {image.split("/")[1].split(".")[0]}
+                  </div>
                 </div>
               ))}
             </div>
