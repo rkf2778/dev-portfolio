@@ -2,6 +2,7 @@
 import React from "react"
 import ContentfulImage from "./ui/ContentfulImage"
 import { Link } from 'react-scroll';
+import IconImage from "./ui/IconImage";
 
 function About() {
   return (
@@ -11,7 +12,8 @@ function About() {
         {/* IMAGE ICON */}
         <section className="flex place-content-center mb-5 md:mb-10">
           <div className="h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
-            <ContentfulImage src="//i.imgur.com/4U5tBXC.png" alt="" height={213} width={213} />
+            {/* <ContentfulImage src="//i.imgur.com/4U5tBXC.png" alt="" height={213} width={213} /> */}
+            <IconImage src="portfolio/profile.png" alt="" height={213} width={213} />
           </div>
         </section>
         {/* HEADING */}
@@ -41,7 +43,7 @@ function About() {
         </section>
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
-          <Link to="contacts" smooth={true} duration={500} offset={-50} className="flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800 hover:bg-black hover:text-white hover:border-white border-2">
+          <Link to="contacts" smooth={true} duration={500} offset={-50} className="cursor-pointer flex-center rounded-full bg-white px-[30px] py-[16px] text-lg font-semibold text-gray-800 hover:bg-black hover:text-white hover:border-white border-2">
             Get In Touch
           </Link>
           <a
