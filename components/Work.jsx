@@ -32,7 +32,7 @@ export default function Work({ post }) {
       <motion.div
         transition={{ layout: { duration: 1 } }}
         layout
-        className="group w-full relative overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
+        className="group relative w-full overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
       >
         {/* BG ANIMATION */}
         <div aria-hidden="true" className="card-box-hover"></div>
@@ -40,19 +40,23 @@ export default function Work({ post }) {
         {/* CARD CONTAINER */}
         <div className="relative grid grid-rows-[auto,auto,1fr,auto] p-9">
           {/* TITLE */}
-          <div className="justify-self-center mt-6 rounded-b-[--card-border-radius] pb-6">
+          <div className="mt-6 justify-self-center rounded-b-[--card-border-radius] pb-6">
             <p className="text-2xl font-bold text-gray-700 dark:text-gray-300">
               {post.title}
             </p>
           </div>
 
           {/* IMAGE */}
-          <div className="justify-self-center mb-2 max-w-lg">
+          <div className="mb-2 max-w-lg justify-self-center">
             <ContentfulImage
               alt={`Cover Image for ${post?.image?.alt}`}
-              src={post.image.src ? post.image.src : 'placehold.co/600x400/orange/white'}
-              width={post.image.width ? post.image.width : 1200}
-              height={post.image.height ? post.image.height : 630}
+              src={
+                post.image.src
+                  ? post.image.src
+                  : "placehold.co/600x400/orange/white"
+              }
+              width={500}
+              height={200}
               quality={10}
               className="object-cover"
             />
@@ -62,7 +66,7 @@ export default function Work({ post }) {
           <motion.div
             transition={{ layout: { duration: 1 } }}
             layout
-            className="mt-6 w-full rounded-b-[--card-border-radius] pb-6 text-justify justify-self-center"
+            className="mt-6 w-full justify-self-center rounded-b-[--card-border-radius] pb-6 text-justify"
           >
             <motion.p layout className="text-gray-700 dark:text-gray-300">
               {isExpanded
@@ -140,26 +144,28 @@ export default function Work({ post }) {
               )}
 
               {/* GITHUB BUTTON */}
-              {post.githubUrl && (<>
-                <a
-                  href={post.githubUrl}
-                  className="group flex size-16 h-[63px] w-[113px] items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
-                >
-                  <span className="sr-only">Source Code</span>
-                  <span className="mr-2">Github</span>
-                  <svg
-                    className="size-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
+              {post.githubUrl && (
+                <>
+                  <a
+                    href={post.githubUrl}
+                    className="group flex size-16 h-[63px] w-[113px] items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
                   >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    ></path>
-                  </svg>
-                </a></>
+                    <span className="sr-only">Source Code</span>
+                    <span className="mr-2">Github</span>
+                    <svg
+                      className="size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+                      ></path>
+                    </svg>
+                  </a>
+                </>
               )}
 
               {/* KAGGLE */}
