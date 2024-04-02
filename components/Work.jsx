@@ -32,7 +32,7 @@ export default function Work({ post }) {
       <motion.div
         transition={{ layout: { duration: 1 } }}
         layout
-        className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
+        className="group w-full relative overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
       >
         {/* BG ANIMATION */}
         <div aria-hidden="true" className="card-box-hover"></div>
@@ -49,10 +49,10 @@ export default function Work({ post }) {
           {/* IMAGE */}
           <div className="justify-self-center mb-2 max-w-lg">
             <ContentfulImage
-              alt={`Cover Image for ${post.image.alt}`}
-              src={post.image.src}
-              width={post.image.width}
-              height={post.image.height}
+              alt={`Cover Image for ${post?.image?.alt}`}
+              src={post.image.src ? post.image.src : 'placehold.co/600x400/orange/white'}
+              width={post.image.width ? post.image.width : 1200}
+              height={post.image.height ? post.image.height : 630}
               quality={10}
               className="object-cover"
             />
