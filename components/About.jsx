@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="flex min-h-screen items-center bg-[#161513]">
       {/* ABOUT CONTAINER */}
-      <div className="mx-auto flex flex-col place-items-center py-[100px]">
+      <div className="mx-auto flex flex-col place-items-center py-[100px] sm:pt-[160px]">
         {/* IMAGE ICON */}
         <section className="mb-5 flex place-content-center md:mb-10">
           <div className="h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
@@ -68,7 +68,7 @@ function About() {
             href="https://drive.google.com/file/d/118WeiKiYvx6rUxjnBEjM7aGMv9ElYVTf/view?usp=sharing"
             target="_blank"
             download
-            className="flex-center hover:border-white mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:bg-gradient-to-tr md:mt-0"
+            className="flex-center mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:border-white hover:bg-gradient-to-tr md:mt-0"
           >
             Download CV
           </a>
