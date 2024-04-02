@@ -58,7 +58,7 @@ export default function Work({ post }) {
               width={500}
               height={100}
               quality={10}
-              className="max-h-[200px] max-w-[500px] object-cover"
+              className="md:max-h-[200px] md:max-w-[500px] object-cover"
             />
           </div>
 
