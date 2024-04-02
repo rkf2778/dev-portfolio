@@ -10,11 +10,11 @@ function Skills() {
         <div className="">
           <div className="mb-7 text-center">
             <h2 className="text-5xl font-semibold leading-normal text-gray-950 dark:text-white">
-              What i&apos;ve played around with 😉
+              What i&apos;ve played around with 
             </h2>
             <p className="mt-1 text-gray-700 dark:text-gray-300">
               <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text text-transparent">
-                Jack of all trades, master of none
+                Jack of all trades, master of none 😉
               </span>
             </p>
           </div>
