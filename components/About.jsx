@@ -68,7 +68,7 @@ function About() {
             href="https://drive.google.com/file/d/118WeiKiYvx6rUxjnBEjM7aGMv9ElYVTf/view?usp=sharing"
             target="_blank"
             download
-            className="flex-center hover:border-white' mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:bg-gradient-to-tr md:mt-0"
+            className="flex-center hover:border-white mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:bg-gradient-to-tr md:mt-0"
           >
             Download CV
           </a>
