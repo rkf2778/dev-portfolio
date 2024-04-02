@@ -56,9 +56,9 @@ export default function Work({ post }) {
                   : "placehold.co/600x400/orange/white"
               }
               width={500}
-              height={200}
+              height={100}
               quality={10}
-              className="object-cover"
+              className="max-h-[200px] max-w-[500px] object-cover"
             />
           </div>
 
