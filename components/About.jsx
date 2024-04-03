@@ -6,7 +6,7 @@ import IconImage from "./ui/IconImage"
 
 function About() {
   return (
-    <div className="flex min-h-screen items-center bg-[#161513]">
+    <div className="pt-16 flex min-h-screen items-center bg-[#161513]">
       {/* ABOUT CONTAINER */}
       <div className="mx-auto flex flex-col place-items-center py-[100px] sm:pt-[160px]">
         {/* IMAGE ICON */}
