@@ -6,9 +6,9 @@ import IconImage from "./ui/IconImage"
 
 function About() {
   return (
-    <div className="pt-16 flex min-h-screen items-center bg-[#161513]">
+    <div className="pt-3 md:pt-16 flex min-h-screen items-center bg-[#161513]">
       {/* ABOUT CONTAINER */}
-      <div className="mx-auto flex flex-col place-items-center py-[100px] sm:pt-[160px]">
+      <div className="mx-auto flex flex-col place-items-center py-[20px] sm:pt-[160px]">
         {/* IMAGE ICON */}
         <section className="mb-5 flex place-content-center md:mb-10">
           <div className="h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
