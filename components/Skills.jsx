@@ -36,7 +36,7 @@ function Skills() {
                     alt={image.split("/")[1].split(".")[0]}
                   />
 
-                  <div className="flex-center whitespace-nowrap text-sm">
+                  <div className="flex-center whitespace-nowrap text-sm text-white">
                     {image.split("/")[1].split(".")[0]}
                   </div>
                 </div>

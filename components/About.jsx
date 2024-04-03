@@ -23,7 +23,7 @@ function About() {
         </section>
         {/* HEADING */}
         <section className="flex flex-col place-items-center">
-          <p className="mb-11 text-3xl font-bold">
+          <p className="mb-11 text-3xl font-bold text-white">
             Hi, I&apos;m{" "}
             <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text text-transparent">
               Rohit

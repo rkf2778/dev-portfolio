@@ -20,24 +20,32 @@ function ContactMe() {
           <div
             key={index}
             id="contact"
-            className=" hover:underline hover:underline-offset-4"
+            className="hover:underline hover:underline-offset-4"
           >
             <a href={social.link} className="flex-center flex-wrap gap-3">
-              {social.platform == "Github" && <FaGithub className="size-10" />}
-              {social.platform == "LinkedIn" && (
-                <FaLinkedin className="size-10" />
+              {/* GITHUB */}
+              {social.platform == "Github" && (
+                <FaGithub className="size-10 text-white" />
               )}
-              {social.platform == "Kaggle" && <FaKaggle className="size-9" />}
+              {/* LINKEDIN */}
+              {social.platform == "LinkedIn" && (
+                <FaLinkedin className="size-10 text-white" />
+              )}
+              {/* KAGGLE */}
+              {social.platform == "Kaggle" && (
+                <FaKaggle className="size-9 text-white" />
+              )}
+              {/* EMAIL */}
               {social.platform == "Email" && (
                 <>
-                  <MdOutlineEmail className="size-14" />
+                  <MdOutlineEmail className="size-14 text-white" />
                 </>
               )}
             </a>
           </div>
         ))}
       </div>
-      <div className="flex-center bg-gray-900 pb-14 text-2xl">
+      <div className="flex-center bg-gray-900 pb-14 text-2xl text-white">
         ©️ Made with love
       </div>
     </>
