@@ -58,7 +58,7 @@ export default function Work({ post }) {
               width={500}
               height={100}
               quality={10}
-              className="md:max-h-[200px] md:max-w-[500px] object-cover"
+              className="object-cover md:max-h-[200px] md:max-w-[500px]"
             />
           </div>
 
@@ -108,7 +108,7 @@ export default function Work({ post }) {
               {post.liveURL && (
                 <a
                   href={post.liveURL}
-                  className="group flex h-[63px] items-center justify-center gap-1.5 rounded-xl bg-gray-100 px-3.5 text-sm text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
+                  className="group flex h-[63px] items-center justify-center gap-1.5 rounded-xl bg-gray-100 px-3.5 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
                 >
                   <span>View Demo</span>
                   <svg
