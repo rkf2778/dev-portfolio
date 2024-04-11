@@ -15,7 +15,7 @@ function ContactMe() {
     <>
       <div
         id="contacts"
-        className="flex-center relative gap-16 bg-gray-900 p-10"
+        className="flex-center flex-wrap relative gap-16 bg-gray-900 p-10"
       >
         {socials.map((social, index) => (
           <div
