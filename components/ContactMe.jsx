@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa"
 import { FaKaggle } from "react-icons/fa6"
 import { MdOutlineEmail } from "react-icons/md"
 
@@ -7,6 +7,7 @@ const socials = [
   { platform: "LinkedIn", link: "https://www.linkedin.com/in/rohitkf/" },
   { platform: "Kaggle", link: "https://www.kaggle.com/rkf2778" },
   { platform: "Email", link: "mailto:rohit.kf.dev@gmail.com" },
+  { platform: "Blog", link: "https://vividrohit.medium.com" },
 ]
 
 function ContactMe() {
@@ -22,7 +23,7 @@ function ContactMe() {
             id="contact"
             className="hover:underline hover:underline-offset-4"
           >
-            <a href={social.link} className="flex-center flex-wrap gap-3">
+            <a href={social.link} target="_blank" className="flex-center flex-wrap gap-3">
               {/* GITHUB */}
               {social.platform == "Github" && (
                 <FaGithub className="size-10 text-white" />
@@ -39,6 +40,11 @@ function ContactMe() {
               {social.platform == "Email" && (
                 <>
                   <MdOutlineEmail className="size-14 text-white" />
+                </>
+              )}
+              {social.platform == "Blog" && (
+                <>
+                  <FaMedium className="size-14 text-white" />
                 </>
               )}
             </a>
