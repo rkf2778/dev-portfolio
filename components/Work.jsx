@@ -108,6 +108,7 @@ export default function Work({ post }) {
               {post.liveURL && (
                 <a
                   href={post.liveURL}
+                  target="_blank"
                   className="group flex h-[63px] items-center justify-center gap-1.5 rounded-xl bg-gray-100 px-3.5 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
                 >
                   <span>View Demo</span>
@@ -148,6 +149,7 @@ export default function Work({ post }) {
                 <>
                   <a
                     href={post.githubUrl}
+                    target="_blank"
                     className="group flex size-16 h-[63px] w-[113px] items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
                   >
                     <span className="sr-only">Source Code</span>
@@ -172,6 +174,7 @@ export default function Work({ post }) {
               {post?.kaggleUrl && (
                 <a
                   href={post?.kaggleUrl}
+                  target="_blank"
                   className="w-15 group flex size-9 w-[90px] items-center justify-center rounded-xl bg-gray-100 text-gray-950 *:select-none hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 *:disabled:opacity-20 dark:bg-gray-500/10 dark:text-white dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white [&>*:not(.sr-only)]:relative"
                 >
                   <span className="sr-only">Kaggle</span>

@@ -15,7 +15,7 @@ function ContactMe() {
     <>
       <div
         id="contacts"
-        className="flex-center flex-wrap relative gap-16 bg-gray-900 p-10"
+        className="flex-center relative flex-wrap gap-16 bg-gray-900 p-10"
       >
         {socials.map((social, index) => (
           <div
@@ -23,7 +23,11 @@ function ContactMe() {
             id="contact"
             className="hover:underline hover:underline-offset-4"
           >
-            <a href={social.link} target="_blank" className="flex-center flex-wrap gap-3">
+            <a
+              href={social.link}
+              target="_blank"
+              className="flex-center flex-wrap gap-3"
+            >
               {/* GITHUB */}
               {social.platform == "Github" && (
                 <FaGithub className="size-10 text-white" />

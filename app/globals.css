@@ -98,7 +98,6 @@ body {
 
 /* All your tailwind definitions with @apply rules are here */
 
-
 /* If the user prefers dark mode, 
 we of course apply color-scheme: dark, as usual */
 @media (prefers-color-scheme: dark) {
