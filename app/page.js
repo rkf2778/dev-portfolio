@@ -10,7 +10,7 @@ export default async function Home() {
     <>
       <OpenToWork />
       <About />
-      <Experience/>
+      <Experience />
       <Skills />
       <Projects />
       <ContactMe />
