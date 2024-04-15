@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils"
 import { Span } from "next/dist/trace"
 import React from "react"
 
@@ -19,7 +20,7 @@ const expList = [
     as: "MSc Data Science",
   },
   {
-    title: "?",
+    title: "? ? ?",
     as: "Data Scientist",
   },
 ]
@@ -34,17 +35,20 @@ function Experience() {
             key={index}
             className="relative w-full max-w-[470px] rounded-xl border px-6 py-5 text-center before:absolute before:inset-0 before:rounded-[11px] before:border-t before:border-white before:bg-gradient-to-b before:from-gray-100 before:shadow dark:border-white/15 dark:bg-gray-900 dark:before:border-white/20 dark:before:from-white/10 dark:before:to-transparent  dark:before:shadow-gray-950"
           >
-            <p className="mb-2 font-bold uppercase text-yellow-600">
+            <p
+              className={cn("mb-2 font-bold uppercase text-yellow-600", {
+                "text-white": exp.title == "? ? ?",
+              })}
+            >
               {exp.title}
             </p>
-            <p className="text-slate-50-900  font-bold">
-              {exp.as == "Data Scientist" ? (
-                <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text uppercase text-transparent">
-                  {exp.as}
-                </span>
-              ) : (
-                exp.as
-              )}
+            <p
+              className={cn("text-slate-50-900  font-bold", {
+                "bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text uppercase text-transparent text-2xl":
+                  exp.as == "Data Scientist",
+              })}
+            >
+              {exp.as}
             </p>
           </div>
         ))}
