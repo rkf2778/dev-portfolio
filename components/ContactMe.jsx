@@ -55,7 +55,7 @@ function ContactMe() {
           </div>
         ))}
       </div>
-      <div className="flex-center bg-gray-900 pb-14 text-2xl text-white">
+      <div className="flex-center bg-gray-900 pb-14 text-2xl text-white" id="love">
         ©️ Made with love
       </div>
     </>

@@ -56,7 +56,7 @@ function About() {
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
           <Link
-            to="contacts"
+            to="love"
             smooth={true}
             duration={500}
             offset={-50}
@@ -65,7 +65,7 @@ function About() {
             Get In Touch
           </Link>
           <a
-            href="https://drive.google.com/file/d/10X6eypklMMvTNa2S_DhMaicS_G8GgE8i/view?usp=sharing"
+            href="https://drive.google.com/file/d/11JzzqAseIRhI0PqA-3JUfutTLmHBPzw3/view?usp=sharing"
             target="_blank"
             download
             className="flex-center mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:border-white hover:bg-gradient-to-tr md:mt-0"
