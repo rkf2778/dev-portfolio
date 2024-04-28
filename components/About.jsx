@@ -56,7 +56,7 @@ function About() {
         {/* CTA SECTION */}
         <section className="flex-center flex-col gap-2 md:flex-row md:gap-5">
           <Link
-            to="contacts"
+            to="love"
             smooth={true}
             duration={500}
             offset={-50}
