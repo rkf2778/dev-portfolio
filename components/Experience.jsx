@@ -20,8 +20,8 @@ const expList = [
     as: "MSc Data Science",
   },
   {
-    title: "? ? ?",
-    as: "Data Scientist | Full stack Web Developer",
+    title: "NEXT ???",
+    as: "",
   },
 ]
 
