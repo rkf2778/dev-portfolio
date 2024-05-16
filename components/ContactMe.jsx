@@ -3,11 +3,11 @@ import { FaKaggle } from "react-icons/fa6"
 import { MdOutlineEmail } from "react-icons/md"
 
 const socials = [
-  { platform: "Github", link: "https://github.com/rkf2778" },
+  { platform: "Github", link: "https://github.com/rohitkf" },
   { platform: "LinkedIn", link: "https://www.linkedin.com/in/rohitkf/" },
   { platform: "Kaggle", link: "https://www.kaggle.com/rkf2778" },
   { platform: "Email", link: "mailto:rohit.kf.dev@gmail.com" },
-  { platform: "Blog", link: "https://vividrohit.medium.com" },
+  { platform: "Blog", link: "https://rohitkf.medium.com" },
 ]
 
 function ContactMe() {
