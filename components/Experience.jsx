@@ -21,7 +21,7 @@ const expList = [
   },
   {
     title: "? ? ?",
-    as: "Data Scientist",
+    as: "Data Scientist | Full stack Web Developer",
   },
 ]
 
