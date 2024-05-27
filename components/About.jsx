@@ -65,7 +65,7 @@ function About() {
             Get In Touch
           </Link>
           <a
-            href="https://drive.google.com/drive/folders/1Zoqk2gs-uQj-ZoRgb_pQ2n4o5Cz4qY2p?usp=sharing"
+            href="https://drive.google.com/file/d/12cTnVKDsJIX-jvJq1yGIhgwe8X1eTKpU/view?usp=sharing"
             target="_blank"
             download
             className="flex-center mt-3 rounded-full border-2 bg-transparent from-[#FF8660] to-[#8000FF] px-[30px] py-[16px] text-lg font-semibold text-white hover:border-white hover:bg-gradient-to-tr md:mt-0"
