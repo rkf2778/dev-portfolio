@@ -14,7 +14,7 @@ function Skills() {
             </h2>
             <p className="mt-1 text-gray-700 dark:text-gray-300">
               <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text text-transparent">
-                Jack of all trades, master of none 😉
+              😉 Jack of all trades, master of none 😉
               </span>
             </p>
           </div>
