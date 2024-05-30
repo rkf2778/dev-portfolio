@@ -47,7 +47,7 @@ function Experience() {
             </p>
             <p
               className={cn("text-slate-50-900  font-bold", {
-                "bg-gradient-to-tr from-[#FF8660] to-[#ff2d2d] bg-clip-text text-2xl uppercase text-transparent":
+                "bg-gradient-to-tr from-[#90ce6e] to-[#ff2d2d] bg-clip-text text-2xl uppercase text-transparent":
                   exp.as == "Data Scientist",
               })}
             >
